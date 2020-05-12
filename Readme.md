@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Валентин Лифанов](https://up.htmlacademy.ru/htmlcss/28/user/1375379).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
