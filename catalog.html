@@ -57,26 +57,32 @@
   <div>
     <section>
       <h2>Фильтр:</h2>
-      <form>
+      <form action="https://echo.htmlacademy.ru" method="get">
         <input type="range" min="1" max="10" step="1" multiple>
-        <h3>Цена:</h3>
-        <h3>Производители</h3>
-        <input type="checkbox" id="bosch" checked>
-        <label for="bosch">bosch</label>
-        <input type="checkbox" id="interscol">
-        <label for="interscol">Интерскол</label>
-        <input type="checkbox" id="makita" checked>
-        <label for="makita">Makita</label>
-        <input type="checkbox" id="dewalt">
-        <label for="dewalt">Dewalt</label>
-        <input type="checkbox" id="hitachi">
-        <label for="hitachi">Hitachi</label>
-        <h3>Питание</h3>
-        <input type="radio" id="battery" checked>
-        <label for="battery">Аккумуляторные</label>
-        <input type="radio" id="network">
-        <label for="network">Сетевые</label>
-        <input type="button" value="Показать">
+        <fieldset>
+          <legend>Цена:</legend>
+        </fieldset>
+        <fieldset>
+          <legend>Производители</legend>
+          <input type="checkbox" id="bosch" name="bosch" checked>
+          <label for="bosch">bosch</label>
+          <input type="checkbox" id="interscol" name="interscol">
+          <label for="interscol">Интерскол</label>
+          <input type="checkbox" id="makita" name="makita" checked>
+          <label for="makita">Makita</label>
+          <input type="checkbox" id="dewalt" name="dawalt">
+          <label for="dewalt">Dewalt</label>
+          <input type="checkbox" id="hitachi" name="Hitachi">
+          <label for="hitachi">Hitachi</label>
+        </fieldset>
+        <fieldset>
+          <legend>Питание</legend>
+          <input type="radio" id="battery" name="product-nutrition" value="battery" checked>
+          <label for="battery">Аккумуляторные</label>
+          <input type="radio" id="network" name="product-nutrition" value="network">
+          <label for="network">Сетевые</label>
+        </fieldset>
+        <button type="submit">Показать</button>
       </form>
     </section>
     <section>
@@ -101,6 +107,7 @@
         </div>
       </article>
       <article>
+        <span class="new">new</span>
         <img src="img/product.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
         <h2>Перфоратор BOSCH BFG 6000</h2>
         <del>30500 р.</del>
@@ -111,6 +118,7 @@
         </div>
       </article>
       <article>
+        <span class="new">new</span>
         <img src="img/product.jpg" width="144" height="128" alt="Перфоратор BOSCH  BFG 3000">
         <h2>Перфоратор BOSCH BFG 3000</h2>
         <del>22500 р.</del>
@@ -131,6 +139,7 @@
         </div>
       </article>
       <article>
+        <span class="new">new</span>
         <img src="img/product.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
         <h2>Перфоратор BOSCH BFG 2000</h2>
         <span>12500 р.</span>
@@ -140,6 +149,7 @@
         </div>
       </article>
       <article>
+        <span class="new">new</span>
         <img src="img/product.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
         <h2>Перфоратор BOSCH BFG 3000</h2>
         <del>22500 р.</del>
@@ -160,6 +170,7 @@
         </div>
       </article>
       <article>
+        <span class="new">new</span>
         <img src="img/product.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
         <h2>Перфоратор BOSCH BFG 2000</h2>
         <span>12500 р.</span>
@@ -170,6 +181,19 @@
       </article>
     </section>
   </div>
+  <section>
+    <h2>Пагинация</h2>
+    <a href="">1</a>
+    <a href="">2</a>
+    <a href="">3</a>
+    <a href="">Следующая</a>
+  </section>
+  <section>
+    <h2>Пара слов о перфораторах</h2>
+    <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+      Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
+      В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+  </section>
 </main>
 <footer>
   <div>
