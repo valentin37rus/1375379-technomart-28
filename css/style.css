@@ -1,10 +1,20 @@
 :root {
   --basic-red: #ee3643;
-  --basic-green: #63A63E;
-  --basic-white: #fff;
-  --bg-transparent: rgba(0, 0, 0, 0.0001);
-  --bg-grey: #293449;
-  --bg-lightgrey: #32425C;
+  --basic-green: #63a63e;
+  --basic-gray: #293449;
+  --basic-graynormal: #32425c;
+  --basic-greylight: #C5C5C5;
+  --basic-background: #F1F5F7;
+  --wight: #fff;
+  --colorfonts: #000;
+  --special-ylellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-lilac: #DC91D8;
+  --special-greenlight: #8ED78F;
+  --special-yellowlight: #FFD180;
+  --success: #5FBB2D;
+  --warning: #FFBF47;
+  --error: #BA2732;
 }
 
 @font-face {
@@ -39,8 +49,46 @@
   font-weight: 400;
 }
 
-h1 {
-  font-family: 'Cuprum';
-  font-weight: 700;
-  font-style: italic;
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--colorfonts);
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: var(--wight);
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.top-header {
+  background-color: var(--basic-gray);
+  color: var(--wight);
+  font-size: 18px;
+}
+
+.top-header a{
+  color: var(--wight);
+}
+
+.logo-header {
+  background-color: var(--basic-red);
+}
+
+.middle-header {
+  background-color: var(--basic-background);
 }
