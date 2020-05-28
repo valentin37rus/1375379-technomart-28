@@ -13,7 +13,6 @@
   --special-greenlight: #8ED78F;
   --special-yellowlight: #FFD180;
   --success: #5FBB2D;
-  --warning: #FFBF47;
   --error: #BA2732;
 }
 
@@ -75,20 +74,53 @@ img {
   height: auto;
 }
 
-.top-header {
+.header-top {
   background-color: var(--basic-gray);
   color: var(--wight);
   font-size: 18px;
+  font-weight: normal;
 }
 
-.top-header a{
+.header-top a{
   color: var(--wight);
 }
 
-.logo-header {
+.header-logo {
   background-color: var(--basic-red);
 }
 
-.middle-header {
+.header-bottom {
   background-color: var(--basic-background);
+}
+
+.header-description {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+.header-contacts {
+  text-align: center;
+}
+
+.header-phone {
+  font-weight: bold;
+  font-size: 21px;
+  color: var(--basic-red);
+}
+
+.header-adress {
+  font-size: 14px;
+  color: var(--basic-graynormal);
+}
+
+.header-notifications {
+  font-size: 21px;
+}
+
+.header-login, .header-registration {
+  background-color: var(--wight);
+  color: var(--colorfonts);
 }
