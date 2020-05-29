@@ -150,20 +150,34 @@ img {
   font-size: 21px;
 }
 
-.header-login, .header-registration {
+.header-login,
+.header-registration,
+.name-client {
   background-color: var(--wight);
   color: var(--colorfonts);
+}
+
+.my-order,
+.personal-area {
+  color: var(--basic-graynormal);
+  font-size: 16px;
 }
 
 .header-login:hover,
 .header-login:focus,
 .header-registration:hover,
-.header-registration:focus {
+.header-registration:focus,
+.my-order:hover,
+.my-order:focus,
+.personal-area:hover,
+.personal-area:focus {
   color: var(--basic-red);
 }
 
 .header-login:active,
-.header-registration:active {
+.header-registration:active,
+.my-order:active,
+.personal-area:active {
   color: var(--basic-greylight);
 }
 
