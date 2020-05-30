@@ -19,9 +19,9 @@
       <input type="search" id="search" placeholder="Поиск:">
     </div>
     <div class="header-links">
-    <a class="bookmarks" href="">Закладки</a>
-    <a class="basket" href="">Корзина</a>
-    <a class="order" href="">Оформить заказ</a>
+      <a class="bookmarks" href="">Закладки</a>
+      <a class="basket" href="">Корзина</a>
+      <a class="order" href="">Оформить заказ</a>
     </div>
   </div>
   <div class="header-bottom">
@@ -52,175 +52,182 @@
   </nav>
 </header>
 <main>
-  <section>
-    <div>
+  <section class="offers">
+    <div class="offer offer-materials">
       <span class="new">new</span>
       <h2>Материалы</h2>
       <a href="">На любой вкус</a>
     </div>
-    <div>
+    <div class="offer offer-tool">
       <h2>Инструменты</h2>
       <a href="">На все случаи жизни</a>
     </div>
-    <div>
+    <div class="offer offer-technique">
       <h2>Техника</h2>
       <a href="">Для стройки</a>
     </div>
-    <div>
-      <!--тут пока не знаю что добавлять, пока только заголовок картинка, описание и кнопка первого слайда. Потом после верстки JS-->
-      <h2>Перфораторы</h2>
-      <img src="img/slider1.jpg" width="620" height="266" alt="Сдайдер перфораторы">
-      <p>Настоящие мужские игрушки</p>
-      <a href="catalog.html">Открыть каталог</a>
-      <h2>Дрели</h2>
-      <img src="img/slider2.jpg" width="620" height="266" alt="Слайдер жрели">
-      <p>Соседям на радость!</p>
-      <a href="">Открыть каталог</a>
+    <div class="offer-slider">
+      <div class="slide-1">
+        <div class="slider-head">
+          <h2>Перфораторы</h2>
+          <p>Настоящие мужские игрушки</p>
+        </div>
+        <img src="img/slider1.jpg" width="620" height="266" alt="Сдайдер перфораторы">
+        <a class="slider-link-catalog" href="catalog.html">Открыть каталог</a>
+      </div>
+      <div class="slide-1">
+        <div class="slider-head">
+          <h2>Дрели</h2>
+          <p>Соседям на радость!</p>
+        </div>
+        <img src="img/slider2.jpg" width="620" height="266" alt="Слайдер дрели">
+        <a class="slider-link-catalog" href="catalog.html">Открыть каталог</a>
+      </div>
     </div>
-    <div>
+    <div class="offer offer-sale">
       <h2>Скидка 50%</h2>
       <a href="">На 350 товаров</a>
     </div>
-    <div>
+    <div class="offer offer-delivery">
       <h2>Доставка</h2>
       <a href="">Бесплатно</a>
     </div>
   </section>
-  <section>
-    <div>
+  <section class="catalog-popular">
+    <div class="catalog-popular-headline">
       <h2>Популярные товары:</h2>
       <a href="">Все популярные товары</a>
     </div>
     <div>
-      <article>
+      <article class="catalog-item">
         <img src="img/bfg9000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 9000">
         <h2>Перфоратор BOSCH BFG 9000</h2>
-        <del>32500 р.</del>
-        <span>25500 р.</span>
-        <div>
-          <button type="button">Купить</button>
-          <a href="">В закладки</a>
+        <div class="catalog-sale"><del>32500 р.</del></div>
+        <div class="catalog-price">25500 р.</div>
+        <div class="catalog-item-action">
+          <div class="catalog-item-buy"><button type="button">Купить</button></div>
+          <div class="catalog-item-marker"><a href="">В закладки</a></div>
         </div>
       </article>
-      <article>
+      <article class="catalog-item">
         <span class="new">new</span>
         <img src="img/bfg3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
         <h2>Перфоратор BOSCH BFG 3000</h2>
-        <del>22500 р.</del>
-        <span>15500 р.</span>
-        <div>
-          <button type="button">Купить</button>
-          <a href="">В закладки</a>
+        <div class="catalog-sale"><del>22500 р.</del></div>
+        <div class="catalog-price">15500 р.</div>
+        <div class="catalog-item-action">
+          <div class="catalog-item-buy"><button type="button">Купить</button></div>
+          <div class="catalog-item-marker"><a href="">В закладки</a></div>
         </div>
       </article>
-      <article>
+      <article class="catalog-item">
         <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
         <h2>Перфоратор BOSCH BFG 6000</h2>
-        <del>30500 р.</del>
-        <span>25500 р.</span>
-        <div>
-          <button type="button">Купить</button>
-          <a href="">В закладки</a>
+        <div class="catalog-sale"><del>30500 р.</del></div>
+        <div class="catalog-price">25500 р.</div>
+        <div class="catalog-item-action">
+          <div class="catalog-item-buy"><button type="button">Купить</button></div>
+          <div class="catalog-item-marker"><a href="">В закладки</a></div>
         </div>
       </article>
-      <article>
+      <article class="catalog-item">
         <span class="new">new</span>
         <img src="img/bfg2000.jpg" width="144" height="128" alt="Перфоратор BOSCH  BFG 2000">
         <h2>Перфоратор BOSCH BFG 2000</h2>
-        <span>15500 р.</span>
-        <div>
-          <button type="button">Купить</button>
-          <a href="">В закладки</a>
+        <div class="catalog-price">15500 р.</div>
+        <div class="catalog-item-action">
+          <div class="catalog-item-buy"><button type="button">Купить</button></div>
+          <div class="catalog-item-marker"><a href="">В закладки</a></div>
         </div>
       </article>
     </div>
   </section>
-  <section>
-    <div>
+  <section class="popular-firm">
+    <div class="popular-firm-headline">
       <h2>Популярные производители:</h2>
       <a href="">Все производители</a>
     </div>
-    <ul>
+    <ul class="firm-logos">
       <li>
         <a href="">
-          <div>
+          <div class="firm-logo">
             <img src="img/bosch.png" width="126" height="37" alt="bosch">
           </div>
         </a>
       </li>
       <li>
         <a href="">
-          <div>
+          <div class="firm-logo">
             <img src="img/makita.png" width="123" height="40" alt="makita">
           </div>
         </a>
       </li>
       <li>
         <a href="">
-          <div>
+          <div class="firm-logo">
             <img src="img/devalt.png" width="146" height="44" alt="dewalt">
           </div>
         </a>
       </li>
       <li>
         <a href="">
-          <div>
+          <div class="firm-logo">
             <img src="img/interscol.png" width="200" height="88" alt="interskol">
           </div>
         </a>
       </li>
       <li>
         <a href="">
-          <div>
+          <div class="firm-logo">
             <img src="img/hitachi.png" width="169" height="31" alt="hitachi">
           </div>
         </a>
       </li>
       <li>
         <a href="">
-          <div>
+          <div class="firm-logo">
             <img src="img/lg.png" width="121" height="73" alt="lg">
           </div>
         </a>
       </li>
       <li>
         <a href="">
-          <div>
+          <div class="firm-logo">
             <img src="img/aeg.png" width="151" height="96" alt="aeg">
           </div>
         </a>
       </li>
       <li>
         <a href="">
-          <div>
+          <div class="firm-logo">
             <img src="img/metabo.png" width="204" height="69" alt="metabo">
           </div>
         </a>
       </li>
     </ul>
   </section>
-  <section>
-    <div>
+  <section class="services">
+    <div class="services-headline">
       <h2>Сервисы</h2>
       <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
     </div>
-    <div>
+    <div class="services-tab">
       <input type="radio" id="radio1" name="tab" checked>
       <input type="radio" id="radio2" name="tab">
       <input type="radio" id="radio3" name="tab">
-      <label for="radio1">доставка</label>
-      <label for="radio2">гарантия</label>
-      <label for="radio3">кредит</label>
-      <div>
-        <div>
+      <label for="radio1">Доставка</label>
+      <label for="radio2">Гарантия</label>
+      <label for="radio3">Кредит</label>
+      <div class="services-variants">
+        <div class="tab-variant variant-delivery">
           <h3>Доставка</h3>
           <p>
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
             заработаем, поднимая его на ваш этаж!
           </p>
         </div>
-        <div>
+        <div class="tab-variant variant-guarantee">
           <h3>Гарантия</h3>
           <p>
             Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
@@ -228,7 +235,7 @@
             восстановите как-нибудь сами.
           </p>
         </div>
-        <div>
+        <div class="tab-variant variant-credit">
           <h3>Кредит</h3>
           <p>
             Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
@@ -270,7 +277,8 @@
 <footer class="footer">
   <div class="footer-top">
     <div class="footer-contacts">
-      <div class="footer-logo"><a href=""><img src="img/logo-technomart.svg" width="136" height="22" alt="логотип техномарт"></a></div>
+      <div class="footer-logo"><a href=""><img src="img/logo-technomart.svg" width="136" height="22"
+                                               alt="логотип техномарт"></a></div>
       <p class="footer-address">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
