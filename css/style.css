@@ -384,7 +384,7 @@ img {
 }
 
 .catalog-item h2 {
-  font-family: PT Sans;
+  font-family: 'pt sans', Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
