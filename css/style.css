@@ -702,3 +702,15 @@ img {
   border: 1px solid var(--basic-red);
 }
 
+.catalog-bottom-description h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.catalog-bottom-description p {
+  font-family: 'pt sans', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
