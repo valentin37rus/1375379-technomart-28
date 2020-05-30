@@ -105,10 +105,15 @@ img {
 
 .header-links a{
   color: var(--wight);
+  line-height: 24px;
 }
 
 .order {
   background-color: var(--basic-green);
+}
+
+.basket-complete {
+  background-color: var(--basic-red);
 }
 
 .order:hover,
@@ -140,11 +145,13 @@ img {
   font-weight: bold;
   font-size: 21px;
   color: var(--basic-red);
+  line-height: 30px;
 }
 
 .header-adress {
   font-size: 14px;
   color: var(--basic-graynormal);
+  line-height: 24px;
 }
 
 .header-notifications {
@@ -156,12 +163,14 @@ img {
 .name-client {
   background-color: var(--wight);
   color: var(--colorfonts);
+  line-height: 21px;
 }
 
 .my-order,
 .personal-area {
   color: var(--basic-graynormal);
   font-size: 16px;
+  line-height: 18px;
 }
 
 .header-login:hover,
@@ -196,6 +205,7 @@ img {
 
 .site-navigation a{
   color: var(--wight);
+  line-height: 24px;
 }
 
 .site-navigation a:hover,
@@ -210,6 +220,7 @@ img {
 
 .main-information h2 {
   font-size: 30px;
+  line-height: 30px;
   text-transform: uppercase;
 }
 
@@ -221,6 +232,7 @@ img {
 
 .list-delivery li{
   font-size: 18px;
+  line-height: 24px;
 }
 
 .information-button {
@@ -251,6 +263,7 @@ img {
 .footer-list {
   list-style: none;
   font-size: 18px;
+  line-height: 24px;
 }
 
 .footer-list a:hover,
@@ -327,6 +340,7 @@ img {
 
 .breadcrumbs a {
   color: var(--colorfonts);
+  line-height: 18px;
 }
 
 .catalog-headline {
@@ -335,6 +349,7 @@ img {
   background-color: #F2F6F8;
   color: var(--basic-graynormal);
   font-weight: normal;
+  line-height: 30px;
 }
 
 .filter h2 {
@@ -342,6 +357,7 @@ img {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: normal;
+  line-height: 18px;
 }
 
 .filter legend {
@@ -349,6 +365,7 @@ img {
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
+  line-height: 30px;
 }
 
 .filter label {
@@ -402,7 +419,7 @@ img {
   text-align: center;
 }
 
-.catalog-item-buy button{
+.catalog-item-buy button {
   background-color: var(--basic-green);
   text-transform: uppercase;
   font-size: 14px;
@@ -415,6 +432,24 @@ img {
   text-transform: uppercase;
   font-size: 14px;
   border: 3px solid var(--basic-green);
+}
+
+.catalog-item-buy button:hover,
+.catalog-item-buy button:focus {
+  background-color: var(--success);
+}
+
+.catalog-item-buy button:active {
+  background-color: #518534;
+}
+
+.catalog-item-marker a:hover,
+.catalog-item-marker a:focus {
+  border: 3px solid var(--basic-graynormal);
+}
+
+.catalog-item-marker a:active {
+  opacity: 0.5;
 }
 
 .new {
