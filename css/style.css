@@ -104,8 +104,51 @@ img {
   align-content: start;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.header-top-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.header-logo {
+  padding: 15px 55px;
+}
+
+.bookmarks,
+.basket {
+  padding-left: 9px;
+}
+
+.header-login {
+  padding-left: 6px;
+}
+
+.header-bottom{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.offers-column {
+  /*display: flex;*/
+}
+
 .main-header {
   background-color: var(--basic-background);
+  margin-bottom: 60px;
 }
 
 .header-top {
@@ -147,6 +190,8 @@ img {
   font-weight: normal;
   line-height: 23px;
   color: var(--basic-red);
+  margin: 0;
+  padding: 0;
 }
 
 .header-contacts {
@@ -228,6 +273,19 @@ img {
 .site-navigation a:active {
   background-color: #1D2739;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.main-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.information-description {
+  width: 460px;
+}
+
+.contacts-map {
+  width: 300px;
 }
 
 .main-information h2 {
