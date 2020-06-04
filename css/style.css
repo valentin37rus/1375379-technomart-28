@@ -788,8 +788,32 @@ img {
   background-color: #BA2732;
 }
 
+.catalog-content {
+  display: flex;
+}
+
+.sorting {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorting-variant {
+  display: flex;
+  justify-content: space-between;
+}
+
 .sorting {
   background-color: var(--garnitura);
+}
+
+.filter {
+  width: 220px;
+}
+
+.catalog-body-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .sorting-headline,
@@ -860,7 +884,10 @@ img {
 }
 
 .pagination-list {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-list a {
