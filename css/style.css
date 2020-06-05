@@ -225,6 +225,10 @@ img {
   line-height: 21px;
 }
 
+.name-client {
+  margin-right: 20px;
+}
+
 .my-order,
 .personal-area {
   color: var(--basic-graynormal);
