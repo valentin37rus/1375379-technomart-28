@@ -497,6 +497,7 @@ img {
   font-size: 13px;
   font-family: 'pt sans', Arial, sans-serif;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs a {
@@ -511,6 +512,12 @@ img {
   color: var(--basic-graynormal);
   font-weight: normal;
   line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.filter {
+  width: 220px;
+  margin-right: 20px;
 }
 
 .filter h2 {
@@ -553,8 +560,11 @@ img {
 
 .catalog-item img {
   display: block;
+  width: 144px;
+  height: 128px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: ;
 }
 
 .catalog-sale {
@@ -804,10 +814,6 @@ img {
 
 .sorting {
   background-color: var(--garnitura);
-}
-
-.filter {
-  width: 220px;
 }
 
 .catalog-body-list {
