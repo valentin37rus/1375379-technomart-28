@@ -593,6 +593,13 @@ img {
   position: absolute;
 }
 
+.product-img {
+  overflow: hidden;
+  width: 144px;
+  height: 128px;
+  margin: 22px auto 38px auto;
+}
+
 .catalog-item h2 {
   font-family: 'pt sans', Arial, sans-serif;
   font-weight: bold;
@@ -605,7 +612,6 @@ img {
   display: block;
   width: 144px;
   height: 128px;
-  margin: 22px auto 38px auto;
 }
 
 .catalog-item-information {
@@ -623,6 +629,7 @@ img {
   color: var(--sale);
   text-align: center;
   margin-bottom: 13px;
+  text-decoration: line-through;
 }
 
 .price-block {
@@ -642,7 +649,7 @@ img {
   margin-top: auto;
 }
 
-.catalog-item-buy button {
+.catalog-item-buy {
   background-color: var(--basic-green);
   text-transform: uppercase;
   font-size: 14px;
@@ -650,28 +657,28 @@ img {
   border: none;
 }
 
-.catalog-item-marker a {
+.catalog-item-marker {
   color:var(--basic-graynormal);
   text-transform: uppercase;
   font-size: 14px;
   border: 3px solid var(--basic-green);
 }
 
-.catalog-item-buy button:hover,
-.catalog-item-buy button:focus {
+.catalog-item-buy:hover,
+.catalog-item-buy:focus {
   background-color: var(--success);
 }
 
-.catalog-item-buy button:active {
+.catalog-item-buy:active {
   background-color: #518534;
 }
 
-.catalog-item-marker a:hover,
-.catalog-item-marker a:focus {
+.catalog-item-marker:hover,
+.catalog-item-marker:focus {
   border: 3px solid var(--basic-graynormal);
 }
 
-.catalog-item-marker a:active {
+.catalog-item-marker:active {
   opacity: 0.5;
 }
 
@@ -955,7 +962,7 @@ img {
 }
 
 .pagination-list a {
-  padding: 10px 15px;
+  /*padding: 10px 15px;
   border: 1px solid #E5E5E5;
   border-radius: 2px;
   color: var(--colorfonts);
@@ -963,7 +970,23 @@ img {
   font-family: 'pt sans', Arial, sans-serif;
   font-weight: normal;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 18px;*/
+  display: block;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #E5E5E5;
+  color: var(--colorfonts);
+  font-family: 'pt sans', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.pagination-list .next-page {
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .active-page a {
