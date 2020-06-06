@@ -112,7 +112,6 @@ img {
 .header-top-menu {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
   align-items: center;
 }
 
@@ -132,7 +131,7 @@ img {
 .header-bottom{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 45px;
+  padding: 40px 0 45px 0;
 }
 
 .site-navigation {
@@ -284,8 +283,7 @@ img {
 .main-information {
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  padding: 70px 0;
 }
 
 .main-information h2,
@@ -364,7 +362,7 @@ img {
 .footer-top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 54px;
+  padding-bottom: 54px;
 }
 
 .footer a {
@@ -627,6 +625,12 @@ img {
   margin-bottom: 13px;
 }
 
+.price-block {
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog-price {
   font-family: 'pt sans', Arial, sans-serif;
   font-weight: bold;
@@ -635,6 +639,7 @@ img {
   color: var(--wight);
   background-color: var(--basic-red);
   text-align: center;
+  margin-top: auto;
 }
 
 .catalog-item-buy button {
