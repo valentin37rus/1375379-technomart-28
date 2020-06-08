@@ -711,7 +711,7 @@ img {
 
 .offer-materials,
 .offer-tool,
-.offer-tool {
+.offer-technique {
   margin-bottom: 20px;
 }
 
@@ -726,24 +726,28 @@ img {
 
 .offer {
   width: 300px;
-  height: 123px;
+  min-height: 123px;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .offer a {
-  display: inline-block;
   background-color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-left: 23px;
-  margin-top: 14px;
-  padding: 10px 24px;
+  min-height: 40px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 0;
+  justify-content: center;
 }
 
 .offer h2 {
   font-size: 24px;
   line-height: 30px;
-  margin: 20px 0 0 23px;
+  margin: 0 0 15px 0;
   padding: 0;
 }
 
@@ -877,17 +881,20 @@ img {
 .firm-logo {
   height: 143px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .firm-logo img {
   /*display: block;
-  margin: 0 auto;*/
+  margin: 0 auto;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  margin: auto;
+  margin: auto;*/
 }
 
 .firm-logo:hover {
