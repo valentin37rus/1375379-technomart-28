@@ -116,10 +116,6 @@ img {
   align-items: center;
 }
 
-.header-logo {
-  padding: 15px 55px;
-}
-
 .bookmarks,
 .basket {
   padding-left: 9px;
@@ -158,9 +154,21 @@ img {
   font-weight: normal;
 }
 
+.header-links {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-links a {
+  display: block;
   color: var(--wight);
   line-height: 24px;
+  flex-basis: 150px;
+}
+
+.header-links a:active {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .order {
@@ -176,14 +184,34 @@ img {
   background-color: var(--success);
 }
 
-.header-links a:active {
-  color: rgba(255, 255, 255, 0.5);
-}
-
 .header-logo {
   background-color: var(--basic-red);
-  width: 108px;
-  height: 18px;
+  width: 220px;
+  min-height: 42px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  background-color: #b52933;
+}
+
+.header-search input[type="search"] {
+  width: 270px;
+  border: none;
+  padding: 10px 0 10px 42px;
+  font-size: 18px;
+  background-color: var(--basic-gray);
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 17px center;
 }
 
 .header-description {
@@ -194,6 +222,7 @@ img {
   color: var(--basic-red);
   margin: 0;
   padding: 0;
+  padding-left: 30px;
 }
 
 .header-contacts {
@@ -581,6 +610,7 @@ img {
   width: 218px;
   min-height: 318px;
   position: relative;
+  overflow: hidden;
 }
 
 .catalog-item-action {
@@ -593,10 +623,6 @@ img {
 .catalog-item:hover
 .catalog-item-action {
   display: block;
-}
-
-.new {
-  position: absolute;
 }
 
 .product-img {
@@ -691,10 +717,18 @@ img {
 }
 
 .new {
+  position: absolute;
   font-size: 14px;
+  line-height: 30px;
   text-align: center;
   color: var(--wight);
+  text-transform: uppercase;
   background-color: var(--basic-red);
+  width: 100px;
+  min-height: 30px;
+  transform: rotate(45deg);
+  right: -25px;
+  top: 10px;
 }
 
 .offers-column {
@@ -729,6 +763,8 @@ img {
   min-height: 123px;
   padding: 16px;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
 .offer a {
