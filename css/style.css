@@ -330,26 +330,25 @@ input::-webkit-input-placeholder {
 
 .header-notifications {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   font-size: 21px;
+  justify-content: flex-end;
+  text-align: center;
 }
 
 .header-login {
+  color: var(--colorfonts);
   margin-right: 10px;
-  display: flex;
-  width: 121px;
+  min-height: 45px;
+  padding: 12px 27px 12px 45px;
+}
+
+.header-registration {
+  color: var(--colorfonts);
   min-height: 45px;
 }
 
-.header-registration a{
-  display: block;
-  color: var(--colorfonts);
-  padding: 12px 24px;
-}
-
 .header-login a {
-  display: block;
-  margin-left: 6px;
   color: var(--colorfonts);
 }
 
