@@ -246,30 +246,40 @@ img {
   background-color: #b52933;
 }
 
+.header-search {
+  position: relative;
+}
+
+.header-search label {
+  position: absolute;
+  top:19px;
+  left: 17px;
+  width: 17px;
+  height: 17px;
+  margin-top: -8.5px;
+  z-index: 10;
+}
+
 .search-input {
   width: 270px;
   min-height: 42px;
   font-size: 18px;
+  padding-left: 42px;
   background-color: var(--basic-gray);
-  /*background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 17px center;*/
   border: none;
   box-shadow: none;
   outline: none;
-  position: relative;
-}
-
-.search-input::before {
-  content: url('data:image/svg+xml;utf8,<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/></svg>');
-  position: absolute;
-  width: 17px;
-  height: 17px;
-  z-index: 1;
+  color: var(--colorfonts);
 }
 
 .search-input:active::before path{
   fill: var(--basic-red);
+}
+
+input::-webkit-input-placeholder {
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .search-input:active,
