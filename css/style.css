@@ -121,10 +121,6 @@ img {
   padding-left: 9px;
 }
 
-.header-login {
-  padding-left: 6px;
-}
-
 .header-bottom {
   display: flex;
   justify-content: space-between;
@@ -230,10 +226,16 @@ img {
 }
 
 .header-phone {
+  display: block;
   font-weight: bold;
   font-size: 21px;
   color: var(--basic-red);
   line-height: 30px;
+  padding: 7px 45px 7px 74px;
+  border: 3px solid #FFF;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 39px center;
 }
 
 .header-adress {
@@ -243,14 +245,35 @@ img {
 }
 
 .header-notifications {
+  display: flex;
+  align-items: flex-start;
   font-size: 21px;
+}
+
+.header-login {
+  margin-right: 10px;
+  display: flex;
+  width: 121px;
+  min-height: 45px;
+  ju
+}
+
+.header-registration a{
+  display: block;
+  color: var(--colorfonts);
+  padding: 12px 24px;
+}
+
+.header-login a {
+  display: block;
+  margin-left: 6px;
+  color: var(--colorfonts);
 }
 
 .header-login,
 .header-registration,
 .name-client {
   background-color: var(--wight);
-  color: var(--colorfonts);
   line-height: 21px;
 }
 
@@ -265,10 +288,10 @@ img {
   line-height: 18px;
 }
 
-.header-login:hover,
-.header-login:focus,
-.header-registration:hover,
-.header-registration:focus,
+.header-login a:hover,
+.header-login a:focus,
+.header-registration a:hover,
+.header-registration a:focus,
 .my-order:hover,
 .my-order:focus,
 .personal-area:hover,
@@ -276,8 +299,8 @@ img {
   color: var(--basic-red);
 }
 
-.header-login:active,
-.header-registration:active,
+.header-login a:active,
+.header-registration a:active,
 .my-order:active,
 .personal-area:active {
   color: var(--basic-greylight);
