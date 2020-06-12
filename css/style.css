@@ -122,13 +122,6 @@ img {
   padding: 40px 0 45px 0;
 }
 
-.site-navigation {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-}
-
 .offers-column {
   /*display: flex;*/
 }
@@ -136,6 +129,7 @@ img {
 .main-header {
   background-color: var(--basic-background);
   margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .header-top {
@@ -250,7 +244,7 @@ img {
   position: relative;
 }
 
-.header-search:hover ~ .header-search path {
+.search-input:hover ~ .header-search path {
   fill: rgba(255, 255, 255, 0.3);
 }
 
@@ -276,7 +270,7 @@ img {
   color: var(--colorfonts);
 }
 
-.search-input:active::before path{
+.search-input:active path{
   fill: var(--basic-red);
 }
 
@@ -330,20 +324,28 @@ input::-webkit-input-placeholder {
 
 .header-notifications {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   font-size: 21px;
-  justify-content: flex-end;
-  text-align: center;
 }
 
 .header-login {
   color: var(--colorfonts);
   margin-right: 10px;
+  width: 121px;
   min-height: 45px;
-  padding: 12px 27px 12px 45px;
+}
+
+.header-login:hover path {
+  fill: #3D546F;
+}
+
+.header-login:active path {
+  fill: #C5C5C5;
 }
 
 .header-registration {
+  width: 150px;
   color: var(--colorfonts);
   min-height: 45px;
 }
@@ -352,9 +354,16 @@ input::-webkit-input-placeholder {
   color: var(--colorfonts);
 }
 
+.header-login svg {
+  margin-right: 6px;
+}
+
 .header-login,
 .header-registration,
 .name-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--wight);
   line-height: 21px;
 }
@@ -370,10 +379,10 @@ input::-webkit-input-placeholder {
   line-height: 18px;
 }
 
-.header-login a:hover,
-.header-login a:focus,
-.header-registration a:hover,
-.header-registration a:focus,
+.header-login:hover,
+.header-login:focus,
+.header-registration:hover,
+.header-registration:focus,
 .my-order:hover,
 .my-order:focus,
 .personal-area:hover,
@@ -381,8 +390,8 @@ input::-webkit-input-placeholder {
   color: var(--basic-red);
 }
 
-.header-login a:active,
-.header-registration a:active,
+.header-login:active,
+.header-registration:active,
 .my-order:active,
 .personal-area:active {
   color: var(--basic-greylight);
@@ -397,12 +406,20 @@ input::-webkit-input-placeholder {
 }
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0 23px;
   list-style: none;
+  min-height: 55px;
 }
 
 .site-navigation a {
   color: var(--wight);
   line-height: 24px;
+  padding: 16px 25px;
 }
 
 .site-navigation a:hover,
