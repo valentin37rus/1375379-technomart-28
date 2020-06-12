@@ -250,6 +250,10 @@ img {
   position: relative;
 }
 
+.header-search:hover ~ .header-search path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
 .header-search label {
   position: absolute;
   top:19px;
