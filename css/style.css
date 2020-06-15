@@ -872,6 +872,7 @@ input:focus::-webkit-input-placeholder {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 30px;
+  margin-bottom: 15px;
 }
 
 .filter label {
@@ -888,11 +889,109 @@ input:focus::-webkit-input-placeholder {
   list-style: none;
 }
 
+.sidebar-form fieldset {
+  border: none;
+  padding: 0 0 26px 0;
+  margin-bottom: 18px;
+}
+
+.sidebar-form fieldset {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.sidebar-form fieldset:last-of-type {
+  border-bottom: none;
+  padding: 0;
+  margin-bottom: 34px;
+}
+
+.filter-producer li,
+.filter-connection li {
+  margin-bottom: 16px;
+}
+
+.filter-producer li:last-child,
+.filter-connection li:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-form input[type="radio"],
+.sidebar-form input[type="checkbox"] {
+  display: none;
+}
+
+.sidebar-form input[type="radio"] + label,
+.sidebar-form input[type="checkbox"] + label {
+  position: relative;
+  padding: 0 0 20px 35px;
+  font: 15px/20px "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #000;
+}
+
+.sidebar-form input[type="radio"] + label:before,
+.sidebar-form input[type="checkbox"] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  display: flex;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #c9c9c9;
+  border-radius: 50%;
+}
+
+.sidebar-form input[type="checkbox"] + label:before {
+  border-radius: 5px;
+}
+
+.sidebar-form input[type="radio"]:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #c9c9c9;
+}
+
+.sidebar-form input[type="checkbox"]:checked + label:after {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  width: 7px;
+  height: 16px;
+  border-right: 5px solid #c9c9c9;
+  border-bottom: 5px solid #c9c9c9;
+  transform: rotate(45deg);
+  box-shadow: 2px 0 0 0 white,inset -2px 0 0 0 white;
+}
+
 .filter-button {
   font-family: 'pt sans', Arial, sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   background-color: var(--wight);
+  color: var(--colorfonts);
+  width: 100%;
+  min-height: 38px;
+  text-align: center;
+  border: 1px solid #E5E5E5;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--basic-red);
+  color: var(--wight)
+}
+
+.filter-button:active {
+  background-color: var(--error);
+  color: var(--wight)
 }
 
 .catalog-body-list {
@@ -907,15 +1006,22 @@ input:focus::-webkit-input-placeholder {
   border: 1px solid #EAEAEA;
   width: 218px;
   min-height: 318px;
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 
 .catalog-item-action {
   display: none;
   text-align: center;
   position: absolute;
-  top: 0;
+  top: 11px;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.catalog-item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .catalog-item:hover
@@ -927,7 +1033,8 @@ input:focus::-webkit-input-placeholder {
   overflow: hidden;
   width: 144px;
   height: 128px;
-  margin: 22px auto 38px auto;
+  margin: 22px auto;
+  position: relative;
 }
 
 .catalog-item h2 {
@@ -971,6 +1078,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .catalog-price {
+  position: relative;
   font-family: 'pt sans', Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -979,6 +1087,17 @@ input:focus::-webkit-input-placeholder {
   background-color: var(--basic-red);
   text-align: center;
   margin-top: auto;
+  padding: 10px 32px;
+  margin-bottom: 21px;
+}
+
+.catalog-price::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -26px;
+  border: 19px solid white;
+  border-left-color: #ee3643;
 }
 
 .catalog-item-buy {
@@ -987,6 +1106,15 @@ input:focus::-webkit-input-placeholder {
   font-size: 14px;
   color: var(--wight);
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  min-height: 38px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  box-shadow: inset 0px -3px 0px #367315;
 }
 
 .catalog-item-marker {
@@ -994,6 +1122,13 @@ input:focus::-webkit-input-placeholder {
   text-transform: uppercase;
   font-size: 14px;
   border: 3px solid var(--basic-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 129px;
+  min-height: 38px;
+  margin: 0 auto;
+  border-radius: 2px;
 }
 
 .catalog-item-buy:hover,
@@ -1025,8 +1160,9 @@ input:focus::-webkit-input-placeholder {
   width: 100px;
   min-height: 30px;
   transform: rotate(45deg);
-  right: -25px;
-  top: 10px;
+  right: -30px;
+  top: 5px;
+  z-index: 1;
 }
 
 .offers-column {
