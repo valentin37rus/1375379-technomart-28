@@ -363,32 +363,32 @@
     </div>
   </div>
 </footer>
-
-
 <section class="form-feedback">
   <h2 class="visually-hidden">Форма обратной связи</h2>
-  <form class="feedback-field" action="https://echo.htmlacademy.ru" method="post">
-    <div class="login-mail">
-      <div class="login-form">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" name="name-author" placeholder="Имя Фамилия">
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <div class="feedback-field">
+      <div class="login-mail">
+        <div class="login-form">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name-author" placeholder="Имя Фамилия">
+        </div>
+        <div class="mail-form">
+          <label for="mail">Ваш e-mail:</label>
+          <input type="email" id="mail" name="mail-author" placeholder="email@example.com">
+        </div>
       </div>
-      <div class="mail-form">
-        <label for="mail">Ваш e-mail:</label>
-        <input type="email" id="mail" name="mail-author" placeholder="email@example.com">
+      <div class="textarea-form">
+        <label for="textarea">Текст письма:</label>
+        <textarea id="textarea" name="text-author" placeholder="В свободной форме"></textarea>
       </div>
     </div>
-    <div class="textarea-form">
-      <label for="textarea">Текст письма:</label>
-      <textarea id="textarea" name="text-author" placeholder="В свободной форме"></textarea>
+    <div class="feedback-button-block">
+      <button class="form-feedback-button" type="submit">Отправить</button>
     </div>
-    <button type="submit">Отправить</button>
   </form>
-  <button type="button">Закрыть</button>
+  <button class="feedback-close" type="button" aria-label="Закрыть"></button>
 </section>
-
-
-<section style="display: none">
+<section class="index-map">
   <h2 class="visually-hidden">Карта проезда</h2>
   <div>
     <iframe
@@ -396,7 +396,7 @@
       width="943" height="449" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
       tabindex="0"></iframe>
   </div>
-  <button type="button">Закрыть</button>
+  <button class="map-close" type="button" aria-label="Закрыть"></button>
 </section>
 </body>
 </html>
