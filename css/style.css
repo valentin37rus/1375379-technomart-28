@@ -814,7 +814,8 @@ img {
   margin-top: 20px;
 }
 
-.breadcrumbs a {
+.breadcrumbs a,
+.breadcrumbs span {
   color: var(--colorfonts);
   line-height: 18px;
   position: relative;
@@ -831,10 +832,6 @@ img {
   position: absolute;
   right: 0;
   top: auto;
-}
-
-.breadcrumbs a:last-child::before {
-  display: none;
 }
 
 .catalog-headline {
@@ -863,6 +860,11 @@ img {
   margin: 0;
   margin-bottom: 14px;
   padding: 0;
+  padding-left: 18px;
+  min-height: 38px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .filter legend {
@@ -1555,6 +1557,10 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: 28px;
+  min-height: 38px;
+  align-items: center;
+  padding-left: 19px;
+  padding-right: 17px;
 }
 
 .sorting h2,
@@ -1563,9 +1569,14 @@ img {
   padding: 0;
 }
 
+.sorting h2 {
+  margin-right: 100px;
+}
+
 .sorting-variant {
   display: flex;
   justify-content: space-between;
+  width: 354px;
 }
 
 .sorting {
@@ -1602,7 +1613,9 @@ img {
 }
 
 .sorting-direction {
+  width: 43px;
   display: flex;
+  justify-content: space-between;
 }
 
 .sorting-up {
