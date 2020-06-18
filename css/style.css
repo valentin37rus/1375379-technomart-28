@@ -1233,14 +1233,37 @@ img {
 
 .offer-materials {
   background-color: var(--special-ylellow);
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 213px center;
 }
 
 .offer-tool {
   background-color: var(--special-blue);
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 194px center;
 }
 
 .offer-technique {
   background-color: var(--special-lilac);
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 191px center;
+}
+
+.offer-sale {
+  background-color: #8ED78F;
+  background-image: url("../img/icon-4.svg");
+  background-repeat: no-repeat;
+  background-position: 196px center;
+}
+
+.offer-delivery {
+  background-color: #FFC047;
+  background-image: url("../img/icon-5.svg");
+  background-repeat: no-repeat;
+  background-position: 191px center;
 }
 
 .slider-head {
@@ -1289,14 +1312,6 @@ img {
 
 .slider-link-catalog:active {
   background-color: #BA2732;
-}
-
-.offer-sale {
-  background-color: #8ED78F;
-}
-
-.offer-delivery {
-  background: #FFC047;
 }
 
 .catalog-popular-headline,
