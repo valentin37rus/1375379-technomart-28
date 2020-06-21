@@ -311,8 +311,9 @@
         Вы можете забрать товар сами,<br>
         заехав в наш офис
       </p>
-      <img class="preview-map" src="img/map.png" width="300" height="158"
-           alt="Наш адрес – улица Большая Конюшевскя, дом 19">
+      <a class="popup-maps">
+      <img class="preview-map" src="img/map.png" width="300" height="158" alt="Наш адрес – улица Большая Конюшевскя, дом 19">
+      </a>
       <a class="information-button button-right" href="">Заблудились? Напишите нам!</a>
     </div>
   </section>
@@ -376,16 +377,16 @@
 </footer>
 <section class="form-feedback">
   <h2 class="visually-hidden">Форма обратной связи</h2>
-  <form action="https://echo.htmlacademy.ru" method="post">
+  <form class="form-client" action="https://echo.htmlacademy.ru" method="post">
     <div class="feedback-field">
       <div class="login-mail">
         <div class="login-form">
           <label for="name">Ваше имя:</label>
-          <input type="text" id="name" name="name-author" placeholder="Имя Фамилия">
+          <input class="client-name" type="text" id="name" name="name-author" placeholder="Имя Фамилия">
         </div>
         <div class="mail-form">
           <label for="mail">Ваш e-mail:</label>
-          <input type="email" id="mail" name="mail-author" placeholder="email@example.com">
+          <input class="client-email" type="email" id="mail" name="mail-author" placeholder="email@example.com">
         </div>
       </div>
       <div class="textarea-form">
@@ -402,12 +403,14 @@
 <section class="index-map">
   <h2 class="visually-hidden">Карта проезда</h2>
   <div>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.2965743535286!2d30.32237!3d59.938893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1590322645126!5m2!1sru!2sru"
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.2965743535286!2d30.32237!3d59.938893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1590322645126!5m2!1sru!2sru"
       width="943" height="449" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
       tabindex="0"></iframe>
   </div>
   <button class="map-close" type="button" aria-label="Закрыть"></button>
 </section>
+<script src="js/popup-entrance.js"></script>
+<script src="js/popup-map.js"></script>
+<script src="js/basket-popup.js"></script>
 </body>
 </html>
