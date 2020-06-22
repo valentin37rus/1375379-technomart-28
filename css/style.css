@@ -1347,6 +1347,7 @@ img {
   bottom: 107px;
   width: 22px;
   height: 40px;
+  cursor: pointer;
 }
 
 .arrow-right {
@@ -1356,6 +1357,7 @@ img {
   bottom: 107px;
   width: 22px;
   height: 40px;
+  cursor: pointer;
 }
 
 .slide-control label {
@@ -1937,7 +1939,8 @@ img {
 }
 
 .feedback-close,
-.map-close {
+.map-close,
+.basket-close {
   position: absolute;
   top: 14px;
   right: 14px;

@@ -1,12 +1,18 @@
-var basketlink = document.querySelectorAll(".catalog-item-buy");
-
 var basketpopup = document.querySelector(".basket-popup");
-var basketclose = mapPopup.querySelector(".basket-close");
+var basketclose = document.querySelector(".basket-close");
+var basketlink = document.querySelectorAll(".catalog-item-buy"),
+  index, button;
 
-basketlink.addEventListener("click", function (evt) {
-  evt.preventDefault();
+
+for (index = 0; index < basketlink.length; index++) {
+  button = basketlink[index];
+  button.addEventListener("click", clickHandler);
+}
+
+function clickHandler(event) {
   basketpopup.classList.add("modal-basket-show");
-});
+  event.preventDefault();
+}
 
 basketclose.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -15,9 +21,9 @@ basketclose.addEventListener("click", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (mapPopup.classList.contains("modal-basket-show")) {
+    if (basketpopup.classList.contains("modal-basket-show")) {
       evt.preventDefault();
-      mapPopup.classList.remove("modal-basket-show");
+      basketpopup.classList.remove("modal-basket-show");
     }
   }
 });
