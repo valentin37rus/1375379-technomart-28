@@ -1039,8 +1039,7 @@ img {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.catalog-item:hover
-.catalog-item-action {
+.catalog-item:hover .catalog-item-action {
   display: block;
 }
 
@@ -1085,7 +1084,7 @@ img {
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 2px;
-  box-shadow: inset 0px -3px 0px #367315;
+  box-shadow: inset 0 -3px 0 #367315;
 }
 
 .catalog-item-buy:hover,
@@ -1172,7 +1171,7 @@ img {
 .catalog-price::after {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 0;
   right: -26px;
   border: 19px solid white;
   border-left-color: #ee3643;
